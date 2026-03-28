@@ -1,0 +1,21 @@
+{
+  "name": "ratoneramarketing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "initial_template_index.js",
+  "scripts": {
+    "seed": "node scripts/seeds/seed-contacts.js",
+    "seed:asistieron": "node scripts/seeds/seed-asistieron.js",
+    "seed:442": "node scripts/seeds/seed-442-contactos.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "pg": "^8.20.0",
+    "xlsx": "^0.18.5"
+  }
+}
