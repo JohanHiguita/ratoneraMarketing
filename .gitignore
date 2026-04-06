@@ -1,12 +1,11 @@
 # Dependencies
 node_modules/
 
+# Prisma
+prisma.config.ts
+
 # Environment variables (credentials)
 .env
-
-# Excel data (phone numbers — datos personales)
-excel DB/
-*.xlsx
 
 # Logs
 *.log
@@ -15,3 +14,9 @@ npm-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+
+/lib/generated/prisma
+
+#manual
+migration-guide.md
+

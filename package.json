@@ -1,12 +1,13 @@
 {
-  "name": "ratoneramarketing",
+  "name": "ratonera-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "initial_template_index.js",
+  "description": "REST API for contacts management + WhatsApp webhook receiver",
+  "main": "app.js",
   "scripts": {
-    "seed": "node scripts/seeds/seed-contacts.js",
-    "seed:asistieron": "node scripts/seeds/seed-asistieron.js",
-    "seed:442": "node scripts/seeds/seed-442-contactos.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,8 +15,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "dotenv": "^17.3.1",
+    "express": "^5.2.1",
     "pg": "^8.20.0",
+    "prisma": "^5.22.0",
+    "swagger-ui-express": "^5.0.1",
+    "twilio": "^5.13.1",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
